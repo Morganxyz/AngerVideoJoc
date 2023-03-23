@@ -1,7 +1,7 @@
 
 public class Vermella extends Faccio{
 
-	private String nom;
+
 	private String color;
 	private String enemic;
 	private String territori;

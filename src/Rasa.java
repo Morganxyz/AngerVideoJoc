@@ -1,13 +1,11 @@
 import java.util.ArrayList;
 
-public abstract class Rasa extends Avatar{
+public abstract class Rasa{
 	
 	private String nomRasa;
 
 	
-	public Rasa(String nom, float alsada,float pes, float forsa,float intel,float agil,float resisFis
-			,float resisMag,String nomRasa) {
-		super(nom, alsada,pes, forsa, intel,agil,resisFis, resisMag);
+	public Rasa(String nomRasa) {
 		this.nomRasa = nomRasa;
 	
 	}

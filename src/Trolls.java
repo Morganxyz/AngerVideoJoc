@@ -5,10 +5,9 @@ public class Trolls extends Rasa{
 	private String afiniProf;
 	private String tempe;
 	
-	public Trolls(String nom, float alsada,float pes, float forsa,float intel,float agil,float resisFis
-			,float resisMag,String nomRasa,String afiniProf,String tempe) {
+	public Trolls(String nomRasa,String afiniProf,String tempe) {
 		
-		super(nom, alsada,pes, forsa, intel,agil,resisFis, resisMag,nomRasa);
+		super(nomRasa);
 		this.afiniProf = "Herboristeria";
 		this.tempe = "Calmats";
 	}

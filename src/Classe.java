@@ -1,14 +1,9 @@
 
-public abstract class Classe extends Rasa{
+public abstract class Classe {
 	
 	private String nomClasse;
 
-
-	
-	public Classe(String nom, float alsada,float pes, float forsa,float intel,float agil,float resisFis
-			,float resisMag,String nomRasa,String nomClasse) {
-		
-		super(nom,alsada,pes, forsa,intel,agil,resisFis,resisMag,nomRasa);
+	public Classe(String nomClasse) {
 		this.nomClasse = nomClasse;
 	
 	}
