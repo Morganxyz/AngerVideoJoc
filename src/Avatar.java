@@ -4,7 +4,7 @@ import java.util.ArrayList;
 public class Avatar{
 	
 	private String nom;
-	private float alsada;
+	private int alsada;
 	private float pes;
 	private float forsa;
 	private float intel;
@@ -28,17 +28,17 @@ public class Avatar{
 	Trolls trol0 = new Trolls("Troll","Herboristeria","Calmado");
 	
 	
-	public Avatar(String nom, float alsada,float pes, float forsa,float intel,float agil,float resisFis
+	public Avatar(String nom, int alsada,float pes, float forsa,float intel,float agil,float resisFis
 			,float resisMag) {
 		
 		this.nom = nom;
 		this.alsada = alsada;
 		this.pes = pes;
-		this.forsa = forsa;
-		this.intel = intel;
-		this.agil = agil;
-		this.resisFis = resisFis;
-		this.resisMag = resisMag;
+		this.forsa = 1;
+		this.intel = 1;
+		this.agil = 1;
+		this.resisFis = 5;
+		this.resisMag = 5;
 		this.llistaClasses.add(arc0);
 		this.llistaClasses.add(war0);
 		this.llistaRasses.add(elf0);
@@ -73,6 +73,17 @@ public class Avatar{
 	}
 	public float getResisMag() {
 		return this.resisMag;
+	}
+
+	public void setNom(String nom){
+			this.nom = nom;
+	}
+
+	public void setAlsada(int alsada){
+			this.alsada = alsada;
+	}
+	public void setPes(float pes){
+			this.pes = pes;
 	}
 	
 	public boolean getMoviment() {
