@@ -1,5 +1,6 @@
 
 import java.util.ArrayList;
+
 public class Avatar{
 	
 	private String nom;
@@ -19,13 +20,12 @@ public class Avatar{
 	Armadura armad0 = new Armadura("Armadura de novato",1,1,1,1,1);
 	ArrayList<Classe> llistaClasses = new ArrayList<>();
 	Arquero arc0 = new Arquero("Arquero","Distancia","PetFilia");
-
-	
-		this.war0 = new Warrior("Warrior","Melé","Ira");
-		this.elf0 = new Elfs("Elfo","Herboristeria","Calmado");
-		this.ena0 = new Enanos("Enano","Minería","Fuerte");
-		this.orc0 = new Orcs("Orco","Minería","Rudo");
-		this.trol0 = new Trolls("Troll","Herboristeria","Calmado");
+	Warrior war0 = new Warrior("Warrior","Melé","Ira");
+	ArrayList<Rasa> llistaRasses = new ArrayList<>();
+	Elfs elf0 = new Elfs("Elfo","Herboristeria","Calmado");
+	Enanos ena0 = new Enanos("Enano","Minería","Fuerte");
+	Orcs orc0 = new Orcs("Orco","Minería","Rudo");
+	Trolls trol0 = new Trolls("Troll","Herboristeria","Calmado");
 	
 	
 	public Avatar(String nom, float alsada,float pes, float forsa,float intel,float agil,float resisFis
@@ -39,6 +39,14 @@ public class Avatar{
 		this.agil = agil;
 		this.resisFis = resisFis;
 		this.resisMag = resisMag;
+		this.llistaClasses.add(arc0);
+		this.llistaClasses.add(war0);
+		this.llistaRasses.add(elf0);
+		this.llistaRasses.add(ena0);
+		this.llistaRasses.add(orc0);
+		this.llistaRasses.add(trol0);
+		this.llistaArmas.add(arma0);
+		this.llistaArmaduras.add(armad0);
 	
 	}
 
@@ -74,6 +82,20 @@ public class Avatar{
 	public int getVelocitat() {
 		return this.velocitat;
 	}
+
+	public ArrayList<Arma> getLlistaArmas(){
+		return this.llistaArmas;
+	}
+	public ArrayList<Armadura> getLlistaArmaduras(){
+		return this.llistaArmaduras;
+	}
+	public ArrayList<Classe> getLlistaClasses(){
+		return this.llistaClasses;
+	}	
+	public ArrayList<Rasa> getLlistaRasses(){
+		return this.llistaRasses;
+	}	
+
 	
 	public void setVelocitat(String velocitat ) {
 		if(velocitat.equalsIgnoreCase("c")){
