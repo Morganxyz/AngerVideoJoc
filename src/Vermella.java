@@ -7,7 +7,7 @@ public class Vermella extends Faccio{
 	private String territori;
 	
 	public Vermella(String nom, String color,String enemic,String territori) {
-		super(nom,color, enemic,territori);
+		super(nom);
 		this.color = "Vermell";	
 		this.enemic = "Verda";
 		this.territori = "Est";

@@ -7,10 +7,21 @@ public class Groga extends Faccio{
 	private String territori;
 	
 	public Groga(String nom, String color,String enemic,String territori) {
-		super(nom,color, enemic,territori);
+		super(nom);
 		this.color = "Grog";	
 		this.enemic = "Morada";
 		this.territori = "Nord";
+	}
+
+	
+	public String getColor(){
+		return this.color;
+	}
+	public String getEnemic(){
+		return this.enemic;
+	}
+	public String getTerritori(){
+		return this.territori;
 	}
 
 

@@ -23,8 +23,8 @@ public class Warrior extends Classe{
 	
 
 	public void beneficiClasse() {
-		float velultima = 0f;
-		velultima = 5;
+		//float velultima = 0f;
+		//velultima = 5;
 	}
 
 }

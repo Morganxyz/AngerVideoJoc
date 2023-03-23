@@ -3,18 +3,21 @@ import java.util.ArrayList;
 public abstract class Faccio {
 
 	private String nom;
-	private String color;
-	private String enemic;
-	private String territori;
-	
+
+	Vermella verm0;
+	Groga grog0;
+	Morada mora0;
+	Verda verd0;
 	private ArrayList<Avatar>llistaAvatars;
 	
-	public Faccio(String nom,String color,String enemic, String territori) {
+	public Faccio(String nom) {
 		this.nom = nom;
-		this.color = color;
-		this.enemic = enemic;
-		this.territori = territori;
 		this.llistaAvatars= new ArrayList<>();
+		this. grog0 = new Groga("Ketep", "Grog", "Morat", "Nord");
+		this. verm0 = new Vermella("Sangui", "Vermell", "Verd", "Est");
+		this. mora0 = new Morada("Morau", "Morat", "Grog", "Sud");
+		this. verd0 = new Verda("Esper", "Verd", "Vermell", "Oest");
+
 		}
 	
 	public String getNom() {
